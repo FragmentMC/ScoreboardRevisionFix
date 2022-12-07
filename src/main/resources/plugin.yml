@@ -3,6 +3,7 @@ author: HelloitsRien
 version: R4 1.1 RELEASE
 main: rien.bijl.Scoreboard.r.Main
 description: Lightweight nonflickering scoreboard revision
+api-version: 1.19
 softdepend: [PlaceholderAPI]
 commands:
   sb:

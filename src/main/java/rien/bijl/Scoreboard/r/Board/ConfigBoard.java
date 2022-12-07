@@ -79,11 +79,11 @@ public class ConfigBoard extends BukkitRunnable {
 
         for (Player player: playerToBoard.keySet()) {
             WrapperBoard wrapperBoard = playerToBoard.get(player);
-            wrapperBoard.setTitle(ScoreboardStrings.placeholders(player, this.title.getLine()));
+            wrapperBoard.setTitle(ScoreboardStrings.make(player, this.title.getLine()));
 
             int count = 0;
             for (Row row: rows) {
-                wrapperBoard.setLine(count, ScoreboardStrings.placeholders(player, row.getLine()));
+                wrapperBoard.setLine(count, ScoreboardStrings.make(player, row.getLine()));
                 count++;
             }
         }
